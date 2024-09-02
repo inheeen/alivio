@@ -1,0 +1,42 @@
+@import "normalizez.scss"
+@import "resets.scss"
+
+@font-face
+    font-family: "lato"
+    src: url("../fonts/Lato-Regular.ttf")
+
+$accent: #01996D
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+
+.btn
+    width: 227px
+    height: 65px
+    color: white
+    background-color: $accent
+    font-family: "lato"
+    font-size: 20px
+    border: none
+    border-radius: 4px
+
+.main-section
+    height: 600px
+    &__content-container
+        background: url("../img/bg.png.png") center
+        background-repeat: no-repeat
+        background-size: cover
+    &__title
+        font-size: 60px
+        font-family: Georgia, 'Times New Roman', Times, serif
+        color: $accent
+        font-weight: bold
+        padding-top: 225px
+        margin-bottom: 30px
+    &__text
+        font-size: 20px
+        font-family: "lato"
+        width: 420px
+        line-height: 25px
+        margin-bottom: 18px
