@@ -412,13 +412,15 @@ table {
 }
 
 .main-section {
-  height: 600px;
+  min-height: 700px;
 }
 
 .main-section__content-container {
+  height: 700px;
   background: url("../img/bg.png.png") center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: fixed;
 }
 
 .main-section__title {
@@ -436,4 +438,138 @@ table {
   width: 420px;
   line-height: 25px;
   margin-bottom: 18px;
+}
+
+.main-section__btn {
+  margin-bottom: 300px;
+}
+
+.second-section {
+  min-height: 1500px;
+}
+
+.second-section__content-container {
+  padding-top: 160px;
+}
+
+.title-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 82px;
+}
+
+.title-box__right-wrapper {
+  width: 500px;
+}
+
+.title-box__first-text {
+  font-family: "lato";
+  color: #424242;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.title-box__title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #01996D;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.title-box__second-text {
+  font-family: "lato";
+  color: #424242;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.steps-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.steps-box__second-step {
+  position: relative;
+  top: 250px;
+}
+
+.steps-box__third-step {
+  position: relative;
+  top: 100px;
+}
+
+.first-step {
+  width: 330px;
+}
+
+.first-step__title {
+  position: relative;
+  top: -47px;
+  left: 110px;
+}
+
+.first-step__text {
+  width: 382px;
+}
+
+.second-step {
+  width: 330px;
+}
+
+.second-step__title {
+  position: relative;
+  top: -47px;
+  left: 70px;
+}
+
+.second-step__text {
+  width: 382px;
+}
+
+.third-step {
+  width: 330px;
+}
+
+.third-step__title {
+  position: relative;
+  top: -47px;
+  left: 130px;
+}
+
+.third-step__text {
+  width: 382px;
+}
+
+.step__num {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 150px;
+  color: rgba(1, 153, 109, 0.2);
+}
+
+.step__title {
+  color: black;
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.step__text {
+  color: #424242;
+  font-size: 18px;
+  font-family: "lato";
+  line-height: 24px;
+  margin-bottom: 60px;
+}
+
+.step__img {
+  width: 330px;
+  height: 492px;
+  border-radius: 12px;
+}
+
+.third-section {
+  background-color: #245852;
+  height: 992px;
 }

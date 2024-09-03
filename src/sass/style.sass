@@ -6,7 +6,7 @@
     src: url("../fonts/Lato-Regular.ttf")
 
 $accent: #01996D
-
+$grey: #424242
 .container
     max-width: 1140px
     margin: 0 auto
@@ -22,11 +22,13 @@ $accent: #01996D
     border-radius: 4px
 
 .main-section
-    height: 600px
+    min-height: 700px
     &__content-container
+        height: 700px
         background: url("../img/bg.png.png") center
         background-repeat: no-repeat
         background-size: cover
+        background-position: fixed
     &__title
         font-size: 60px
         font-family: Georgia, 'Times New Roman', Times, serif
@@ -40,3 +42,97 @@ $accent: #01996D
         width: 420px
         line-height: 25px
         margin-bottom: 18px
+    &__btn
+        margin-bottom: 300px
+
+.second-section
+    min-height: 1500px
+    &__content-container
+        padding-top: 160px
+
+.title-box
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 82px
+    &__right-wrapper
+        width: 500px
+    &__first-text
+        font-family: "lato"
+        color: $grey
+        font-size: 20px
+        margin-bottom: 20px
+    &__title
+        font-family: Georgia, 'Times New Roman', Times, serif
+        color: $accent
+        font-weight: bold
+        font-size: 48px
+    &__second-text
+        font-family: "lato"
+        color: $grey
+        font-size: 18px
+        line-height: 24px
+
+.steps-box
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    &__second-step
+        position: relative
+        top: 250px
+    &__third-step
+        position: relative
+        top: 100px
+.first-step
+    width: 330px
+    &__title
+        position: relative
+        top: -47px
+        left: 110px
+    &__text
+        width: 382px
+
+.second-step
+    width: 330px
+    &__title
+        position: relative
+        top: -47px
+        left: 70px
+    &__text
+        width: 382px
+
+.third-step
+    width: 330px
+    &__title
+        position: relative
+        top: -47px
+        left: 130px
+    &__text
+        width: 382px
+
+.step__num
+    font-family: Georgia, 'Times New Roman', Times, serif
+    font-size: 150px
+    color: rgba(1, 153, 109, 0.2)
+
+.step__title
+    color: black
+    font-size: 30px
+    font-family: Georgia, 'Times New Roman', Times, serif
+
+.step__text
+    color: $grey
+    font-size: 18px
+    font-family: "lato"
+    line-height: 24px
+    margin-bottom: 60px
+
+.step__img
+    width: 330px
+    height: 492px
+    border-radius: 12px
+
+.third-section
+    background-color: #245852
+    height: 992px
