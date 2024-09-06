@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/bootstrap.min.css">
     <link rel="stylesheet" href="./src/css/style.css">
-    <title>Document</title>
+    <title>Alivio</title>
 </head>
 <body>
     <!-- первая секция -->
@@ -23,31 +23,52 @@
                       </button>
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#projects"><p class="navbar__text">Why Alivio</p></a>
                           </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Ссылка</a>
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#projects"><p class="navbar__text">Solutions</p></a>
                           </li>
-                          <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Выпадающий список
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Действие</a></li>
-                              <li><a class="dropdown-item" href="#">Другое действие</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
-                            </ul>
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#projects"><p class="navbar__text">Community</p></a>
                           </li>
-                          <li class="nav-item">
-                            <a class="nav-link disabled">Отключенная</a>
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#projects"><p class="navbar__text">Pricing</p></a>
                           </li>
                         </ul>
                         <form class="d-flex" role="search">
-                          <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
-                          <button class="btn btn-outline-success" type="submit">Поиск</button>
+                          <p class="navbar__text">Sign in</p>
                         </form>
+                        <!-- Кнопка-триггер модального окна -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          Start Trial
+                        </button>
+
+                        <!-- Модальное окно -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Start Trial</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                              </div>
+                              <div class="modal-body">
+                                <div>
+                                  <label class="modal-forms"  for="username">Username:</label>
+                                  <input type="text" id="username" name="username" />
+                                </div>
+                                <div>
+                                  <label class="modal-forms"   for="pass">Password:</label>
+                                  <input type="password" id="pass" name="password" minlength="8" required />
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                <button type="button" class="btn btn-secondary">Сохранить изменения</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </nav>
@@ -112,6 +133,7 @@
         </div>
       </div>
     </section>
+    <!-- четвертая секция -->
     <section class="four-section">
       <div class="four-section__content-container content-container container">
         <div class="four-section__left-wrapper">
@@ -136,6 +158,7 @@
         </div>
       </div>
     </section>
+    <!-- подвал -->
     <footer class="footer">
       <div class="footer__content-container content-container container">
         <p class="footer__title">Alivio</p>
@@ -145,6 +168,7 @@
         <p class="footer__text">Pricing</p>
       </div>
     </footer>
+    
     <script src="./src/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

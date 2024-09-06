@@ -405,6 +405,19 @@ table {
   margin: 0 auto;
 }
 
+.d-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar__text {
+  color: #424242;
+  font-size: 16px;
+  font-family: "lato";
+  margin-right: 20px;
+}
+
 .btn {
   width: 227px;
   height: 65px;
@@ -414,6 +427,45 @@ table {
   font-size: 20px;
   border: none;
   border-radius: 4px;
+}
+
+.btn-primary {
+  width: 157px;
+  height: 45px;
+  color: white;
+  background-color: #01996D;
+  font-family: "lato";
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-secondary {
+  width: 200px;
+  height: 55px;
+  color: white;
+  background-color: #01996D;
+  font-family: "lato";
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.modal-forms {
+  margin-bottom: 30px;
+  color: #424242;
+  font-size: 16px;
+  font-family: "lato";
+}
+
+.modal-forms:last-child {
+  margin-bottom: 0px;
 }
 
 .main-section {
