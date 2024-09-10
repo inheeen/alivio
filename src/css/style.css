@@ -400,6 +400,12 @@ table {
   src: url("../fonts/ofont.ru_Avenir Next.ttf");
 }
 
+@media screen and (max-width: 1280px) {
+  .about {
+    padding: 450px 15px 110px 15px;
+  }
+}
+
 .body {
   overflow: hidden;
 }
@@ -632,6 +638,8 @@ table {
 
 .third-section {
   background-color: #245852;
+  position: relative;
+  margin: 0 auto;
 }
 
 .third-section__content-container {
@@ -1099,9 +1107,6 @@ table {
 }
 
 @media (max-width: 575px) {
-  .body {
-    width: 100%;
-  }
   .container {
     width: 100%;
   }
