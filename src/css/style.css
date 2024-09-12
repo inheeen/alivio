@@ -648,11 +648,12 @@ table {
 .third-section {
   background-color: #245852;
   position: relative;
+  top: 50px;
   margin: 0 auto;
 }
 
 .third-section__content-container {
-  padding-top: 250px;
+  padding-top: 150px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
